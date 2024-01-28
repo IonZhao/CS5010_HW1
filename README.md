@@ -10,9 +10,12 @@ License: MIT
 
 ## Test
 
-Enter blow to run the code and check the solution.
+In a suitable folder, enter the following command to run code and check the solution.
 
 ```bash
+git clone https://github.com/Hi-Joey/CS5010_HW1.git
+cd ./CS5010_HW1
+npm i
 node index.js
 ```
 
