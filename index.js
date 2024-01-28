@@ -22,30 +22,40 @@ myPromptManager.recordDellaPrompt(
 );
 
 // show all the record
-console.log("***SHOW ALL RECORD:");
+// SHOW
+console.log("----------------------------------------------------SHOW--------------------------------------------");
+console.log("-------SHOW ALL RECORD:-------");
 myPromptManager.showAllInterations();
 
 // show certain record
-console.log("***SHOW CERTAIN RECORD:");
+console.log("-------SHOW CERTAIN RECORD:-------");
 myPromptManager.showInteration(3);
 
 
 // show certain record's type
-console.log("***SHOW RECORD'TYPE:");
+console.log("-------SHOW RECORD'TYPE:-------");
 myPromptManager.showInterationType(3);
 myPromptManager.showInterationType(2);
 
 
 // update certain record
+console.log("---------------------------------------------------UPDATE-------------------------------------------");
+console.log("-------BEFORE UPDATE ON RECORD 2:-------");
+myPromptManager.showInteration(2);
+// update
 myPromptManager.updateUniversalPrompt(
   2, "Update prompt test2","Update response test2",new Date()
 );
-console.log("***AFTER UPDATE ON RECORD 2:");
+
+console.log("-------AFTER UPDATE ON RECORD 2:-------");
 myPromptManager.showInteration(2);
 
+console.log("---------------------------------------------------DELETE-------------------------------------------");
+console.log("-------BEFORE DELETE:-------");
+myPromptManager.showAllInterations();
 // delete certain record
 myPromptManager.deletePrompt(1);
 myPromptManager.deletePrompt(1);
 
-console.log("***AFTER DELETE:");
+console.log("-------AFTER DELETE:-------");
 myPromptManager.showAllInterations();

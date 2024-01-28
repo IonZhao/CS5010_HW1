@@ -28,19 +28,20 @@ The output will be 3 part. Each modification will be done and result would outpu
 Show all the interaction that just been recorded.
 
 ```
-***SHOW ALL RECORD:
+----------------------------------------------------SHOW--------------------------------------------
+-------SHOW ALL RECORD:-------
 Record 0:
 Prompt Aren't you forgettin... had response I apologize if I mis...
 Record 1:
 Prompt What is imperative p... had response Imperative programmi...
 Record 2:
-Prompt Prompt test1 with ti... had response Response test1 with ... run at Sat Jan 27 2024 22:01:11 GMT-0800 (Pacific Standard Time) 
+Prompt Prompt test1 with ti... had response Response test1 with ... run at Sat Jan 27 2024 23:21:57 GMT-0800 (Pacific Standard Time)      
 Record 3:
 Prompt DellaPrompt test1 wi... with image input url https://i.insider.co... had response DellaResponse test1 ...  with image out put url https://media.themov...
-***SHOW CERTAIN RECORD:
+-------SHOW CERTAIN RECORD:-------
 Record 3:
 Prompt DellaPrompt test1 wi... with image input url https://i.insider.co... had response DellaResponse test1 ...  with image out put url https://media.themov...
-***SHOW RECORD'TYPE:
+-------SHOW RECORD'TYPE:-------
 Record 3's Type:
 This is a instance of DellaInteraction Class which extends from Interaction.
 Record 2's Type:
@@ -54,9 +55,13 @@ This is not a instance of DellaInteraction.
 Show all the interaction and check if successfully update .
 
 ```
-***AFTER UPDATE ON RECORD 2:
+---------------------------------------------------UPDATE-------------------------------------------
+-------BEFORE UPDATE ON RECORD 2:-------
 Record 2:
-Prompt Update prompt test2... had response Update response test... run at Sat Jan 27 2024 22:01:11 GMT-0800 (Pacific Standard Time) 
+Prompt Prompt test1 with ti... had response Response test1 with ... run at Sat Jan 27 2024 23:21:57 GMT-0800 (Pacific Standard Time)      
+-------AFTER UPDATE ON RECORD 2:-------
+Record 2:
+Prompt Update prompt test2... had response Update response test... run at Sat Jan 27 2024 23:21:57 GMT-0800 (Pacific Standard Time)
 ```
 
 
@@ -66,7 +71,17 @@ Prompt Update prompt test2... had response Update response test... run at Sat Ja
 Show all the interaction and check if successfully delete.
 
 ```
-***AFTER DELETE:
+---------------------------------------------------DELETE-------------------------------------------
+-------BEFORE DELETE:-------
+Record 0:
+Prompt Aren't you forgettin... had response I apologize if I mis...
+Record 1:
+Prompt What is imperative p... had response Imperative programmi...
+Record 2:
+Prompt Update prompt test2... had response Update response test... run at Sat Jan 27 2024 23:21:57 GMT-0800 (Pacific Standard Time)       
+Record 3:
+Prompt DellaPrompt test1 wi... with image input url https://i.insider.co... had response DellaResponse test1 ...  with image out put url https://media.themov...
+-------AFTER DELETE:-------
 Record 0:
 Prompt Aren't you forgettin... had response I apologize if I mis...
 Record 1:
