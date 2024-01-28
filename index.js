@@ -14,11 +14,11 @@ myPromptManager.recordPrompt(
 );
 
 myPromptManager.recordTimestampedPrompt(
-  "Prompt Test1 with timestamp","Response Test1 with timestamp",new Date()
+  "Prompt test1 with timestamp","Response test1 with timestamp",new Date()
 );
 
 myPromptManager.recordDellaPrompt(
-  "DellaPrompt Test1 with img url","DellaResponse Test1 with img url","https://i.insider.com/64a325b16075be0019c28e16?width=1000&format=jpeg&auto=webp","https://media.themoviedb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg"
+  "DellaPrompt test1 with img url","DellaResponse test1 with img url","https://i.insider.com/64a325b16075be0019c28e16?width=1000&format=jpeg&auto=webp","https://media.themoviedb.org/t/p/w500/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg"
 );
 
 // show all the record
@@ -33,11 +33,12 @@ myPromptManager.showInteration(3);
 // show certain record's type
 console.log("***SHOW RECORD'TYPE:");
 myPromptManager.showInterationType(3);
+myPromptManager.showInterationType(2);
 
 
 // update certain record
 myPromptManager.updateUniversalPrompt(
-  2, "Update Prompt Test2","Update Response Test2",new Date()
+  2, "Update prompt test2","Update response test2",new Date()
 )
 console.log("***AFTER UPDATE ON RECORD 2:")
 myPromptManager.showInteration(2);

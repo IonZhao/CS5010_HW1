@@ -23,7 +23,12 @@ export class PromptsManager {
     // show certain type
     showInterationType(indexNumber){
         console.log(`Record ${indexNumber}'s Type:`);
-        this.interactions[indexNumber].showType();
+        
+        if(this.interactions[indexNumber].isDalle === true){
+            console.log("This is a instance of DellaInteraction Class which extends from Interaction.");
+        }else{
+            console.log("This is not a instance of DellaInteraction.");
+        }   
     }
 
     // Record

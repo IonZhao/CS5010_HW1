@@ -4,9 +4,14 @@ class TimestampedInteractions extends Interaction{
     
     timeStamp = "";
     
-    constructor(prompt, response,timeStamp){
-        super(prompt, response);
-        this.timeStamp = timeStamp;
+    constructor(prompt, response,timeStamp = new Date()){
+        // check valid inputs
+        if(prompt && response && timeStamp instanceof  Date){
+            super(prompt, response);
+            this.timeStamp = timeStamp;
+        }else{
+            throw new Error('Invalid parameters,need 2 non-null parameters and a Date type parameter');
+        }
     }
 
     show(){
