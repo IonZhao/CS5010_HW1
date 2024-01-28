@@ -4,13 +4,13 @@ const myPromptManager = new PromptsManager();
 
 // Record each prompt
 myPromptManager.recordPrompt(
-  `Aren't you forgetting a very important one?`,
-  `I apologize if I missed mentioning a specific coding paradigm. Please clarify which paradigm you are referring to, and I'll be happy to provide information about it.`
+  "Aren't you forgetting a very important one?",
+  "I apologize if I missed mentioning a specific coding paradigm. Please clarify which paradigm you are referring to, and I'll be happy to provide information about it."
 );
   
 myPromptManager.recordPrompt(
-  `What is imperative programming?`,
-  `Imperative programming is a programming paradigm that uses statements that change a program's state. In imperative programming, the focus is on describing how a program operates.`
+  "What is imperative programming?",
+  "Imperative programming is a programming paradigm that uses statements that change a program's state. In imperative programming, the focus is on describing how a program operates."
 );
 
 myPromptManager.recordTimestampedPrompt(
@@ -22,7 +22,7 @@ myPromptManager.recordDellaPrompt(
 );
 
 // show all the record
-console.log("***SHOW ALL RECORD:")
+console.log("***SHOW ALL RECORD:");
 myPromptManager.showAllInterations();
 
 // show certain record
@@ -39,13 +39,13 @@ myPromptManager.showInterationType(2);
 // update certain record
 myPromptManager.updateUniversalPrompt(
   2, "Update prompt test2","Update response test2",new Date()
-)
-console.log("***AFTER UPDATE ON RECORD 2:")
+);
+console.log("***AFTER UPDATE ON RECORD 2:");
 myPromptManager.showInteration(2);
 
 // delete certain record
 myPromptManager.deletePrompt(1);
 myPromptManager.deletePrompt(1);
 
-console.log("***AFTER DELETE:")
+console.log("***AFTER DELETE:");
 myPromptManager.showAllInterations();
