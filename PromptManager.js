@@ -1,6 +1,6 @@
 import Interaction from "./Interaction.js";
 import TimestampedInteractions from "./TimeStampedInteraction.js";
-import DellaInteraction from "./DellaInteraction.js";
+import DalleInteraction from "./DalleInteraction.js";
 
 export class PromptsManager {
   interactions = [];
@@ -24,9 +24,9 @@ export class PromptsManager {
     console.log(`Record ${indexNumber}'s Type:`);
 
     if(this.interactions[indexNumber].isDalle === true){
-      console.log("This is a instance of DellaInteraction Class which extends from Interaction.");
+      console.log("This is a instance of DalleInteraction Class which extends from Interaction.");
     }else{
-      console.log("This is not a instance of DellaInteraction.");
+      console.log("This is not a instance of DalleInteraction.");
     }   
   }
 
@@ -45,7 +45,7 @@ export class PromptsManager {
 
 
   recordDellaPrompt(prompt, response,prompt_img,response_img) {
-    const p = new DellaInteraction(prompt,response,prompt_img,response_img);
+    const p = new DalleInteraction(prompt,response,prompt_img,response_img);
     //console.log("*** INTERACTIONS", this.interactions);
     this.interactions.push(p);
   }
@@ -67,7 +67,7 @@ export class PromptsManager {
     }else if(numParams === 5){
       const prompt_img = args[3];
       const response_img = args[4];
-      p = new DellaInteraction(prompt,response,prompt_img,response_img);
+      p = new DalleInteraction(prompt,response,prompt_img,response_img);
     }else{
       console.log("Wrong input.");
       return;
