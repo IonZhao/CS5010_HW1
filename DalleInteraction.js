@@ -1,6 +1,6 @@
 import Interaction from "./Interaction.js";
 
-class DellaInteraction extends Interaction{
+class DalleInteraction extends Interaction{
 
   prompt_img =""; // record the img url.
   response_img ="";
@@ -26,7 +26,10 @@ class DellaInteraction extends Interaction{
     );
   }
 
+  // Professor said we should add this, correct me if I am wrong.
+  getType(){
+    return "DalleInteraction";
 }    
 
 
-export default DellaInteraction;
+export default DalleInteraction;
